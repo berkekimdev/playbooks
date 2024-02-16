@@ -1,0 +1,6 @@
+- name: Restart Windows system
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Restart the system
+      win_reboot:
